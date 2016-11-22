@@ -6,8 +6,8 @@ description      'A convenient Chef LWRP to manage user accounts and SSH keys (t
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.6.0'
 
-issues_url 'https://github.com/fnichol/chef-user/issues'
-source_url 'https://github.com/fnichol/chef-user'
+issues_url 'https://github.com/fnichol/chef-user/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/fnichol/chef-user' if respond_to?(:source_url)
 
 supports 'ubuntu'
 supports 'debian'
